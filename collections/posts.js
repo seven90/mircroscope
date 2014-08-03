@@ -26,6 +26,8 @@ Meteor.methods({
       submitted: new Date().getTime()
     });
 
+    var postId = Posts.insert(post);
+
     return postId;  
   }
 });
