@@ -1,5 +1,5 @@
 Template.postEdit.events({
-  'submitform': function(e) {
+  'submit form': function(e) {
     e.preventDefault();
 
     var currentPostId = this._id;
@@ -27,5 +27,5 @@ Template.postEdit.events({
       Posts.remove(currentPostId);
       Router.go('postsList');  
     }
-  }
+  })
 });
